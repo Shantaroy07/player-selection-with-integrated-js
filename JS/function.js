@@ -16,6 +16,7 @@ function getValueById(inputId) {
 
     else {
         const inputValue = parseFloat(inputField.value);
+        inputField.value = '';
         return inputValue;
     }
 }
@@ -42,7 +43,7 @@ function getPlayerExpenses() {
 }
 
 function getTotalExpenses() {
-    const playersExpense = parseFloat(getPlayerExpenses());
+    const playersExpense = parseFloat(getInnerTextById('player-expenses'));
     const managerExpense = parseFloat(getValueById('manager-field'));
     const coachExpense = parseFloat(getValueById('coach-field'));
 
