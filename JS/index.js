@@ -12,8 +12,5 @@ for (let i = 0; i < elements.length; i++) {
         li.innerText = text;
         listField.appendChild(li);
 
-
-
-
     });
 }
