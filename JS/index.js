@@ -1,6 +1,7 @@
 
-
 const elements = document.getElementsByClassName('buttons');
+
+let listArray = [];
 
 
 for (let i = 0; i < elements.length; i++) {
@@ -12,5 +13,15 @@ for (let i = 0; i < elements.length; i++) {
         li.innerText = text;
         listField.appendChild(li);
 
+        listArray.push(li);
+
     });
 }
+
+document.getElementById('player-calc-btn').addEventListener('click', function () {
+    const listNumber = listArray.length;
+
+
+
+
+})
