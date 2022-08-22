@@ -19,9 +19,10 @@ for (let i = 0; i < elements.length; i++) {
 }
 
 document.getElementById('player-calc-btn').addEventListener('click', function () {
-    const listNumber = listArray.length;
+    setElementsById('player-expenses', getPlayerExpenses());
 
+})
 
-
-
+document.getElementById('total-calc-btn').addEventListener('click', function () {
+    setElementsById('total-expense', getTotalExpenses());
 })

@@ -32,3 +32,21 @@ function setElementsById(inputId, value) {
     elementField.innerText = value;
 
 }
+
+function getPlayerExpenses() {
+    const playerNumber = listArray.length;
+    const perPlayerExpense = parseFloat(getValueById('per-player-field'));
+    const playersExpense = perPlayerExpense * playerNumber;
+    return playersExpense;
+
+}
+
+function getTotalExpenses() {
+    const playersExpense = parseFloat(getPlayerExpenses());
+    const managerExpense = parseFloat(getValueById('manager-field'));
+    const coachExpense = parseFloat(getValueById('coach-field'));
+
+    const totalExpenses = playersExpense + managerExpense + coachExpense;
+    return totalExpenses;
+
+}
