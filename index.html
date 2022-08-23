@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- -----Top Banner------- -->
     <header>
         <div class="bg-black text-center relative flex">
             <div>
@@ -35,8 +36,9 @@
 
     <main>
         <div class="flex flex-col lg:flex-row gap-3 mx-auto w-3/4 mt-5" id="players">
-
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
+            <!-- -----Players Section------ -->
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 mb-10">
+                <!-- Player 1 -->
                 <div
                     class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div>
@@ -51,6 +53,7 @@
                             Select</button>
                     </div>
                 </div>
+                <!-- Player 2 -->
                 <div
                     class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div>
@@ -65,6 +68,7 @@
                             Select</button>
                     </div>
                 </div>
+                <!-- Player 3 -->
                 <div
                     class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div>
@@ -79,6 +83,7 @@
                             Select</button>
                     </div>
                 </div>
+                <!-- Player 4 -->
                 <div
                     class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div>
@@ -93,6 +98,7 @@
                             Select</button>
                     </div>
                 </div>
+                <!-- Player 5 -->
                 <div
                     class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div>
@@ -107,6 +113,7 @@
                             Select</button>
                     </div>
                 </div>
+                <!-- Player 6 -->
                 <div
                     class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div>
@@ -123,8 +130,9 @@
                 </div>
 
             </div>
+            <!-- -------Selection and Calculation Section------ -->
             <div>
-
+                <!-- ---------Selection Section ------------>
                 <div class="bg-black px-4 py-2 h-60">
                     <div>
                         <h1 class="text-xl md:text-2xl lg:text-3xl font-semibold text-orange-300 mb-2 text-center ">
@@ -133,17 +141,25 @@
 
 
                     <div class="overflow-x-auto">
-                        <table class="text-white w-full">
+                        <!-- -----using table------------ -->
+                        <!-- <table class="text-white w-full">
                             <!-- head -->
 
-                            <tbody id="list-field">
+                        <!-- <tbody id="list-field">
                             </tbody>
-                        </table>
+                        </table> -->
+
+                        <!-- -----using list------------ -->
+
+                        <ol class="text-white" id="list-field">
+
+                        </ol>
                     </div>
 
 
                 </div>
-                <div class="bg-black text-white">
+                <!-- ----------Calculation Section------- -->
+                <div class="bg-black text-white mb-10">
                     <div class="container  mx-auto mt-10 mr-10 px-3 py-4 ">
                         <h1 class="font-semibold text-xl md:text-2xl lg:text-3xl text-center  text-orange-300 my-3">
                             Budget</h1>

@@ -1,3 +1,4 @@
+//function for get value from input field
 function getValueById(inputId) {
     const inputField = document.getElementById(inputId);
 
@@ -21,6 +22,7 @@ function getValueById(inputId) {
     }
 }
 
+//function for get innerText by ID
 function getInnerTextById(inputId) {
     const textField = document.getElementById(inputId);
     const text = textField.innerText;
@@ -28,12 +30,15 @@ function getInnerTextById(inputId) {
 
 }
 
+
+//function for setElements
 function setElementsById(inputId, value) {
     const elementField = document.getElementById(inputId);
     elementField.innerText = value;
 
 }
 
+// calculation for players expenses
 function getPlayerExpenses() {
     const playerNumber = listArray.length;
     const perPlayerExpense = parseFloat(getValueById('per-player-field'));
@@ -42,6 +47,8 @@ function getPlayerExpenses() {
 
 }
 
+
+// calculation for total expenses
 function getTotalExpenses() {
     const playersExpense = parseFloat(getInnerTextById('player-expenses'));
     const managerExpense = parseFloat(getValueById('manager-field'));
